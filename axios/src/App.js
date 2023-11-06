@@ -10,7 +10,9 @@ function App() {
   }, []);
   return (
     <>
-      <h1 className="">Data with Axios</h1>
+      <h1 className="text-center font-bold font text-4xl p-3 text-orange-600 shadow mb-3 ">
+        Data with Axios
+      </h1>
       {myData.map((post) => {
         const { id, name, username, email, address, company, website, phone } =
           post;
@@ -28,6 +30,7 @@ function App() {
             <p className="text-lg ">Company: {company.name}</p>
             <p className="text-lg ">Phone: {phone}</p>
             <p className="text-lg ">Website: {website}</p>
+            console.log(Hello);
           </div>
         );
       })}
